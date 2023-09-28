@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Sex on the beach",
+        "price": 10,
+        "img": "https://www.1001cocktails.com/wp-content/uploads/1001cocktails/2018/06/shutterstock_2267968785.jpg"
+    },
+    {
+        "name": "Marguarita",
+        "price": 13,
+        "img": "https://www.1001cocktails.com/wp-content/uploads/1001cocktails/2023/03/137002_origin-768x512.jpg"
+    },
+    {
+        "name": "Martini",
+        "price": 8,
+        "img": "https://www.1001cocktails.com/wp-content/uploads/1001cocktails/2023/03/81787_origin-scaled-768x512.jpg"
+    }
+]

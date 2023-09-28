@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { Cocktail, CocktailService } from '../cocktail.service';
+import { CocktailService } from '../cocktail.service';
+import { Cocktail } from '../models/cocktail.model';
 
 @Component({
   selector: 'app-cocktail-list',
@@ -7,10 +8,16 @@ import { Cocktail, CocktailService } from '../cocktail.service';
   styleUrls: ['./cocktail-list.component.css']
 })
 export class CocktailListComponent {
-  cocktails!:Cocktail[];
+  cocktails:Cocktail[] = [];
+
   constructor(private cocktailService:CocktailService){}
 
   ngOnInit(){
-    this.cocktails = this.cocktailService.getCocktails()
+    this.cocktailService.getCocktails().subscribe(cocktailsFromJsonFile => {
+      this.cocktails = cocktailsFromJsonFile;
+      console.log('cocktails: ',this.cocktails);
+      
+    })
+    
   }
 }
